@@ -1,0 +1,18 @@
+// @import "extraGajinder";
+@import "breakpoint";
+@import "fonts";
+@import "utilities";
+@import "colors";
+@import "components";
+
+@import "header";
+@import "landpage";
+
+.container {
+    padding-right: 16px;
+    padding-left: 16px;
+
+    @include br-up(xxl) {
+        max-width: 1312px;
+    }
+}
