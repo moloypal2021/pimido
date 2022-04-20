@@ -485,18 +485,363 @@
 
     &.rankEdit {
         padding-top: 60px;
+        padding-bottom: 40px;
 
         @include br-up(sm) {
             padding-top: 80px;
+            padding-bottom: 56px;
         }
 
         @include br-up(md) {
             padding-top: 96px;
+            padding-bottom: 70px;
         }
 
         @include br-up(lg) {
             padding-top: 130px;
+            padding-bottom: 80px;
         }
+
+        .sub-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #222831;
+            margin-bottom: 16px;
+
+            @include br-up(md) {
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 18px;
+            }
+
+            @include br-up(lg) {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 22px;
+            }
+        }
+
+        .title {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 32px;
+            color: #272727;
+            margin-bottom: 20px;
+
+            @include br-up(md) {
+                font-size: 32px;
+                line-height: 40px;
+                margin-bottom: 24px;
+            }
+
+            @include br-up(lg) {
+                font-size: 40px;
+                line-height: 48px;
+                margin-bottom: 28px;
+            }
+        }
+
+        .paragraph {
+            font-size: 14px;
+            line-height: 24px;
+            color: rgba(32, 32, 32, 0.64);
+            margin-bottom: 32px;
+
+            @include br-up(md) {
+                max-width: 875px;
+                font-size: 16px;
+                line-height: 32px;
+                margin-bottom: 50px;
+            }
+
+        }
+
+        .t-table {
+            border-top: 1px solid #F9DFE7;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            .t-img {
+                width: 100%;
+                height: 120px;
+                object-fit: cover;
+                margin-bottom: 4px;
+
+                @include br-up(md) {
+                    width: 280px;
+                    height: 180px;
+                    margin-bottom: 0px;
+                }
+
+                @include br-up(lg) {
+                    width: 120px;
+                    height: 80px;
+                }
+
+                border-radius: 6px;
+            }
+
+            .t-title {
+                font-size: 16px;
+                line-height: 32px;
+                color: #151413;
+                margin-bottom: 0px;
+
+                @include br-up(md) {
+                    font-size: 18px;
+                }
+
+                @include br-up(lg) {
+                    font-size: 20px;
+                }
+            }
+
+            .t-price {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 20px;
+                color: #411D71;
+                margin-bottom: 0px;
+
+                @include br-up(md) {
+                    font-size: 14px;
+                    line-height: 32px;
+                }
+
+                @include br-up(lg) {
+                    font-size: 16px;
+                }
+            }
+
+        }
+
+
+    }
+
+    &.register {
+        background: radial-gradient(50% 50% at 50% 50%, #2D1252 0%, #3D1E67 100%);
+        padding-top: 64px;
+        padding-bottom: 44px;
+        position: relative;
+
+        @include br-up(md) {
+            padding-top: 80px;
+            padding-bottom: 64px;
+        }
+
+        @include br-up(lg) {
+            padding-top: 124px;
+            padding-bottom: 102px;
+        }
+
+        .bg-img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: right;
+            }
+        }
+
+        .sub-title {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-bottom: 16px;
+
+            @include br-up(md) {
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 18px;
+            }
+
+            @include br-up(lg) {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 22px;
+            }
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 12px;
+            color: #FFFFFF;
+
+            @include br-up(md) {
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+
+            @include br-up(lg) {
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
+
+        .paragraph {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #8896AB;
+            margin-bottom: 18px;
+
+            @include br-up(md) {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 26px;
+            }
+        }
+
+        form {
+            max-width: 530px;
+
+            .form-label {
+                font-family: 'Epilogue', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #FFFFFF;
+                margin-bottom: 6px;
+
+                @include br-up(md) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            .form-control {
+                padding: 12px 14px;
+                background: #FFFFFF;
+                border: 1px solid #D5DAE1;
+                box-sizing: border-box;
+                box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+                border-radius: 4px;
+                color: #2A3342;
+                font-size: 14px;
+                line-height: 20px;
+
+                @include br-up(md) {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+
+
+            .form-check {
+                margin-right: 20px;
+
+                @include br-up(md) {
+                    margin-right: 80px;
+                }
+
+                .form-check-input {
+                    width: 16px;
+                    height: 16px;
+                    margin-top: 0px;
+                }
+
+                .form-check-label {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 12px;
+                    color: #FFFFFF;
+                    margin-top: 0px;
+                }
+            }
+
+            .forget-pass {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+
+            .btn-signup {
+                margin-top: 40px;
+                background: #D33A6D;
+                box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+                border-radius: 6px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #F0FDF4;
+                padding: 12px 24px;
+
+                @include br-up(md) {
+                    margin-top: 54px;
+                }
+            }
+
+            .have-account {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-top: 18px;
+                margin-bottom: 30px;
+
+                .btn-signin {
+                    text-decoration: none;
+                    color: #D33A6D;
+                }
+            }
+
+        }
+
+        .register-using {
+            max-width: 530px;
+
+            .r-using {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 32px;
+                color: #FFFFFF;
+                margin-bottom: 8px;
+            }
+
+            .btn-r-using {
+                padding: 2px;
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 4px;
+                text-align: left;
+                width: 236px;
+
+                @include br-up(sm) {
+                    width: 100%;
+                }
+
+                .btn-icon {
+                    width: 43px;
+                    height: 43px;
+                }
+
+                .btn-text {
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.5px;
+                    color: #FFFFFF;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+
     }
 
 }
